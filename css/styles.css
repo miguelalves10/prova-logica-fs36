@@ -1,0 +1,22 @@
+
+nav {
+    text-align: right;
+    color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+table {
+    margin-top: 150px;
+    width: 100%;
+    align-content: space-between;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+}
