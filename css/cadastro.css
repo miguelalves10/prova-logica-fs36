@@ -53,5 +53,12 @@ input {
 }
 
 button {
-    padding: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: darkslategray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
+
