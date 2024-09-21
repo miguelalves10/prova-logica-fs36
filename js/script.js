@@ -26,41 +26,33 @@ async function dadosApiTmdb() {
         // guardando todos os dados que tem na api
         const resultados = response.data.results;
 
-        // for each
         resultados.forEach(resultado => {
             let linha = document.createElement('tr');
 
-            
             let colunaFilme = document.createElement('td');
-            //colunaFilme.colSpan = 3;
 
             colunaFilme.textContent = resultado.title;
             linha.appendChild(colunaFilme);
-    
+            
+            let colunaSinopse = document.createElement('td');
 
-        
-            let colunaGenero = document.createElement('td');
-            //colunaGenero.colSpan = 3;
+            colunaSinopse.textContent = resultado.overview;
+            linha.appendChild(colunaSinopse);
 
-            colunaGenero.textContent = 'Gênero indisponível'
-            //colunaGenero.textContent = resultados.genres.map(genero => genero.name).join(', ');
-            linha.appendChild(colunaGenero);
-
-
-        
-            let colunaDiretor = document.createElement('td');
-            //colunaDiretor.colSpan = 3;
-            //colunaDiretor.textContent = resultados.director;
-            colunaDiretor.textContent = 'Diretor indisponível';
-            linha.appendChild(colunaDiretor);
+            let colunaAvaliacao = document.createElement('td');
+            colunaAvaliacao.textContent = resultado.vote_average;
+            linha.appendChild(colunaAvaliacao);
 
 
             tableBody.appendChild(linha);
-        
         });
     } catch (error) {
         console.error('Erro ao buscar os dados sobre o filme!', error)
     }
 }
+
+
+
+
 
 dadosApiTmdb();

@@ -51,3 +51,7 @@ input {
     margin-top: 50px;
     text-align: center;
 }
+
+button {
+    padding: 10px;
+}
