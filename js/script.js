@@ -2,6 +2,9 @@ const apiKey = 'b3904bfb3f89cb18c2456466a94bdcd5'
 const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=pt-BR`
 const tableBody = document.querySelector('#tableBody');
 
+
+
+
 function pegarDadosLogin(event) {
     event.preventDefault();
 
