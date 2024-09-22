@@ -10,6 +10,7 @@ const cadastroDiretor = document.querySelector('#diretor');
 const cadastroGenero = document.querySelector('#generoCadastro');
 const buscarBtn = document.querySelector('#buscarBtn');
 
+
 async function preencherCamposCadastro(event) {
     event.preventDefault();
     const query = inputFilme.value.trim();
