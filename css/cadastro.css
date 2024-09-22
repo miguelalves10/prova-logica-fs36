@@ -1,4 +1,18 @@
 
+nav {
+    text-align: right;
+    color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-bottom: 100px;
+    font-size: 21px;
+}
+
 h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -6,19 +20,20 @@ h2 {
     margin-bottom: 80px;
 }
 
-.procurarFilme {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 18px;
-}
 
-.procurarFilme label {
+
+.procurarFilmes label {
     text-align: center;
     font-size: 18px;
     margin-bottom: 10px;
     font-weight: bold;
 }
 
+.procurarFilmes {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
 
 form {
     width: 250px; 

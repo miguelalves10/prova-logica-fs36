@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/cadastro.css">
+    
     <title>Página de Cadastro</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 </head>
+
 <body>
     <main class="container">
-        <h2>Cadastro de Filmes</h2>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                    <a href="login.html">Login</a>
+                    <a href="cadastro.html">Cadastrar</a>
+                </li>
+            </ul>
+        </nav>
 
         <div class="procurarFilmes">
-            <label for="procurarFilme">Buscar Filme:</label>
+            <label for="procurarFilme">Registrar filme:</label>
             <input type="text" id="procurarFilme" name="procurarFilme" placeholder="Nome do Filme">
-            <button type="submit">Buscar</button>
-            <div class="resultados">
         </div>
 
-        <form>
-            <div class="dadosFilme"></div>
-                <label for="nome">Nome do Filme</label>
-                <input type="text" id="nome" name="nome" placeholder="Nome do Filme">
-                
-                <label for="diretor">Diretor</label>
-                <input type="text" id="dirtor" name="diretor" placeholder="Diretor">
+        <form id="formCadastro" onsubmit="return preencherCamposCadastro(event)" >
+            <label for="filme">Nome do Filme</label>
+            <input type="text" id="filme" name="filme" placeholder="Nome do Filme">
 
-                <label for="genero">Gênero</label>
-                <input type="text" id="genero" name="genero" placeholder="Gênero">
+            <label for="diretor">Diretor</label>
+            <input type="text" id="diretor" name="diretor" placeholder="Diretor">
 
-                <label for="faixa">Faixa etária</label>
-                <input type="text" id="faixa" name="faixa" placeholder="Faixa etária">
+            <label for="generoCadastro">Gênero</label>
+            <input type="text" id="generoCadastro" name="generoCadastro" placeholder="Gênero">
 
-                <div class="button">
-                    <button type="submit">Registrar</button>
-                </div>
+            <button id="buscarBtn" type="submit">Buscar</button>
+
+            <div class="button">
+                <button type="button" >Registrar</button>
+            </div>
         </form>
     </main>
 
 
 
-
     <script src="js/script.js"></script>
 </body>
+
 </html>
